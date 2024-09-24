@@ -198,6 +198,7 @@ __attribute__((visibility("default"))) const char *__tsan_default_suppressions()
           "race_top:^java.lang.String.hashCode\n"
           // Suppress known, benign races in j.c.u
           "race_top:^java.util.concurrent.ConcurrentHashMap\n"
+          "race_top:^java.nio.Bits\n"
           "race:^java.util.concurrent.locks\n");
 }
 
